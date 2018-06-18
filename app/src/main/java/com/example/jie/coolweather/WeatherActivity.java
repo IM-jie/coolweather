@@ -1,4 +1,4 @@
-package com.example.jie.coolweather;
+package com.coolweather.android;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,12 +10,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -25,11 +20,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.jie.coolweather.gson.Forecast;
-import com.example.jie.coolweather.gson.Weather;
-import com.example.jie.coolweather.service.AutoUpdateService;
-import com.example.jie.coolweather.util.HttpUtil;
-import com.example.jie.coolweather.util.Utility;
+import com.coolweather.android.gson.Forecast;
+import com.coolweather.android.gson.Weather;
+import com.coolweather.android.service.AutoUpdateService;
+import com.coolweather.android.util.HttpUtil;
+import com.coolweather.android.util.Utility;
 
 import java.io.IOException;
 
@@ -38,6 +33,7 @@ import okhttp3.Callback;
 import okhttp3.Response;
 
 public class WeatherActivity extends AppCompatActivity {
+
     public DrawerLayout drawerLayout;
 
     public SwipeRefreshLayout swipeRefresh;

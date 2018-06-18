@@ -1,9 +1,10 @@
-package com.example.jie.coolweather;
+package com.coolweather.android;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +15,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.jie.coolweather.db.City;
-import com.example.jie.coolweather.db.County;
-import com.example.jie.coolweather.db.Province;
-import com.example.jie.coolweather.util.HttpUtil;
-import com.example.jie.coolweather.util.Utility;
-
+import com.coolweather.android.db.City;
+import com.coolweather.android.db.County;
+import com.coolweather.android.db.Province;
+import com.coolweather.android.util.HttpUtil;
+import com.coolweather.android.util.Utility;
 
 import org.litepal.crud.DataSupport;
 
